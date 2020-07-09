@@ -5,7 +5,6 @@ url = 'https://www.jadwalsholat.org/adzan/monthly.php?id=47'
 contents = requests.get(url)
 soup = BeautifulSoup(contents.text, "html.parser")
 data = soup.find_all('tr', 'table_highlight')
-data[0]
 
 sholat = {}
 i = 0
